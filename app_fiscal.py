@@ -13,9 +13,10 @@ st.set_page_config(page_title="Análise Fiscal", layout="wide")
 st.title("Resultado Fiscal")
 
 # --- Caminhos dos Arquivos ---
-BASE_PATH = r"C:\Users\vivig\OneDrive\Documentos\SPLOR\paineis_bi\Streamlit\painel_fiscal\data-raw"
-FILE_RECEITA = os.path.join(BASE_PATH, "receita.csv")
-FILE_DESPESA = os.path.join(BASE_PATH, "despesa.csv")
+# --- Caminhos dos Arquivos ---
+# Apontando para a pasta "data-raw" que está no GitHub
+FILE_RECEITA = "data-raw/receita.csv"
+FILE_DESPESA = "data-raw/despesa.csv"
 
 
 @st.cache_data
